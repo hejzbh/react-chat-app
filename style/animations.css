@@ -1,0 +1,35 @@
+@-webkit-keyframes moveBtn {
+  from {
+    -webkit-transform: translateX(-2%);
+            transform: translateX(-2%);
+    opacity: 1;
+  }
+  50% {
+    -webkit-transform: translateX(-5%);
+            transform: translateX(-5%);
+    opacity: 0.5;
+  }
+  to {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    opacity: 1;
+  }
+}
+@keyframes moveBtn {
+  from {
+    -webkit-transform: translateX(-2%);
+            transform: translateX(-2%);
+    opacity: 1;
+  }
+  50% {
+    -webkit-transform: translateX(-5%);
+            transform: translateX(-5%);
+    opacity: 0.5;
+  }
+  to {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=animations.css.map */

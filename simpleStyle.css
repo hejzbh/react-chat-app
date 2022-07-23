@@ -1,0 +1,123 @@
+.top::after {
+    content: '';
+    position: absolute;
+    z-index: 3;
+    top: -5px !important;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius:0 0 14px 14px  ;
+    background:#9274FF;
+    padding: 1.5em 2em;
+    min-width: 17em;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.top::before {
+    content: '';
+    position: absolute;
+    z-index: 5;
+    top: 0.7em;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0.4em;
+    border-radius: 8px;
+    min-width: 10em;
+    background:#7C57FF;
+}
+
+
+.number:hover {
+    transition: 250ms ease;
+    transform: scale(1.1);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+
+
+.top_bg {
+    position: absolute;
+    bottom: -5.5em;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+
+.result {
+    color: #08090A;
+    text-shadow: 1px 2px 3px rgba(100, 100, 111, 0.2);
+    font-size: 24px;
+}
+
+@media (max-width:1280px){
+    .calculator__container {
+        min-width: 60% !important;
+    }
+}
+
+
+@media (max-width:900px){
+    .calculator__container {
+        min-width: 70% !important;
+    }
+}
+
+
+@media (max-width:720px){
+    .calculator__container {
+        min-width: 80% !important;
+    }
+
+    .number{
+        font-size: 20px !important;
+    }
+
+    .operator {
+       padding: 1em !important;
+    }
+
+
+    .btn {
+        padding:1em !important;
+        font-size: 18px !important;
+    }
+
+    .calculator, .calculator__container {
+        min-height: 70vh !important;
+    }
+
+    .top {
+        min-height: 30vh !important;
+    }
+    .bottom {
+        min-height: 40vh !important;
+    }
+
+    .operator {
+        padding:1.5em !important;
+        font-size: 15px !important;
+    }
+
+    .result {
+        font-size: 17px;
+    }
+
+    .operands {
+        font-size: 14px !important;
+    }
+}
+
+
+.operands {
+    max-width: 200px !important;
+   word-break: break-all !important;
+   margin-bottom: 0.5em;
+}
+
+
+
+.result {
+    max-width: 180px !important;
+   word-break: break-all !important;
+}
